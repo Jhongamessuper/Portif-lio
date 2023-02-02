@@ -18,7 +18,8 @@
     position: fixed;
     width: 100%;
     overflow: hidden;
-    background-color: #353535;
+    background-color: #35353575;
+    backdrop-filter: blur(10px);
 }
 
 .logo{
@@ -30,12 +31,12 @@
 .menu-navbar ul{
     display: flex;
     align-items: center;
+    float: right;
     gap: 35px;
 }
 
 .menu-navbar ul li a{
     color: white;
-    float: right;
     font-size: 20px;
 }
 
@@ -51,33 +52,29 @@ header{
     align-items: center;
     justify-content: space-around;
     padding-top: 100px;
-    background-color: #556476;
+    background-color: rgb(65, 65, 102);
 }
 
-.cabecalho-titulo{
+.cabecalho-titulo-e-subtitulo{
     color: white;
     padding-bottom: 50px;
-    font-size: 40px;
-}
-
-.cabecalho-subtitulo{
-    color: white;
-    padding-bottom: 50px;
-    font-size: 30px;
+    font-size: 25px;
+    margin-left: 80px;
 }
 
 .cabecalho-btn{
     width: 15vw;
-    height: 10vh;
-    background-color: rgb(206, 205, 214);
+    height: 8vh;
+    background-color: rgb(45, 53, 78);
     border-radius: 50px;
     font-size: 20px;
+    color: white;
 }
 
 .cabecalho-btn:hover{
     width: 15vw;
-    height: 10vh;
-    background-color: rgb(230, 230, 230);
+    height: 8vh;
+    background-color: rgb(63, 70, 92);
 }
 
 .cabecalho-img{
@@ -93,16 +90,16 @@ header{
                   
 /*-----------CONTEUDO-PRINCIPAL-----------*/
 
-.conteudo-principal{
+.conteudo{
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 100px;
     padding-bottom: 100px;
-    background-color: #081b33e3;
+    background-color: rgb(33, 33, 51);
 }
 
-.conteudo-principal-titulo{
+.conteudo-titulo{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -112,7 +109,7 @@ header{
     padding-bottom: 30px;
 }
 
-.conteudo-principal div{
+.conteudo-container{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -127,27 +124,27 @@ header{
 .minha-foto{
     width: 100%;
     height: 40vh;
-    border: 10px solid #369D9C;
+    border: 10px solid #494852;
     border-radius: 80%;
 }
 
-.conteudo-principal-paragrafo{
+.conteudo-paragrafo{
     color: white;
     font-size: 35px;
 }
 
 /*-----------CONTEUDO-SECUNDÁRIO-----------*/
 
-.conteudo-secundario{
+.conteudo2{
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 100px;
     padding-bottom: 100px;
-    background-color: #556476;
+    background-color: rgb(65, 65, 102);
 }
 
-.conteudo-secundario-titulo{
+.conteudo2-titulo{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -157,34 +154,100 @@ header{
     padding-bottom: 30px;
 }
 
-.conteudo-secundario div{
+.container-de-cards{
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    flex-wrap: wrap;
     justify-content: center;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    align-items: center;
 }
 
-.conteudo-secundario div img{
+.card{
+    border-radius: 5px;
+    box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.22);
+    padding: 30px;
+    margin: 20px;
+    width: 400px;
+    background-color: rgb(226, 226, 226);
+    text-align: center;
+}
+
+.card-img{
     width: 100%;
-    height: 30vh;
-    padding-right: 20px;
-    padding-left: 20px;
+    height: 20vh;
+}
+
+.card2{
+    border-radius: 5px;
+    box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.22);
+    padding: 30px;
+    margin: 20px;
+    width: 400px;
+    background-color: rgb(226, 226, 226);
+    text-align: center;
+}
+
+.card2-img{
+    width: 100%;
+    height: 20vh;
+}
+
+.card3{
+    border-radius: 5px;
+    box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.22);
+    padding: 30px;
+    margin: 20px;
+    width: 400px;
+    background-color: rgb(226, 226, 226);
+    text-align: center;
+}
+
+.card3-img{
+    width: 100%;
+    height: 20vh;
+}
+
+.card4{
+    border-radius: 5px;
+    box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.22);
+    padding: 30px;
+    margin: 20px;
+    width: 400px;
+    background-color: rgb(226, 226, 226);
+    text-align: center;
+}
+
+.card4-img{
+    width: 100%;
+    height: 20vh;
+}
+
+.card5{
+    border-radius: 5px;
+    box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.22);
+    padding: 30px;
+    margin: 20px;
+    width: 400px;
+    background-color: rgb(226, 226, 226);
+    text-align: center;
+}
+
+.card5-img{
+    width: 100%;
+    height: 20vh;
 }
 
 /*-----------CONTEUDO-TERCIÁRIO-----------*/
 
-.conteudo-terciario{
+.conteudo3{
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 100px;
     padding-bottom: 100px;
-    background-color: #081b3391;
+    background-color: rgb(33, 33, 51);
 }
 
-.conteudo-terciario-titulo{
+.conteudo3-titulo{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -194,23 +257,40 @@ header{
     padding-bottom: 30px;
 }
 
-.conteudo-terciario div{
+.container-de-cards2{
     display: flex;
+    justify-content: center;
     align-items: center;
-    padding-top: 100px;
-    padding-bottom: 100px;
 }
 
-.projeto-retro-arcanord{
+.card6{
+    border-radius: 5px;
+    box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.22);
+    padding: 30px;
+    margin: 20px;
+    width: 400px;
+    background-color: rgb(226, 226, 226);
+    text-align: center;
+}
+
+.card6-img{
     width: 100%;
     height: 20vh;
 }
 
-.conteudo-terciario div img{
+.card7{
+    border-radius: 5px;
+    box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.22);
+    padding: 30px;
+    margin: 20px;
+    width: 400px;
+    background-color: rgb(226, 226, 226);
+    text-align: center;
+}
+
+.card7-img{
     width: 100%;
     height: 20vh;
-    padding-right: 20px;
-    padding-left: 20px;
 }
 
 /*-----------CONTEUDO-RODAPÉ-----------*/

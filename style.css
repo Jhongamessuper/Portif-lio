@@ -7,9 +7,9 @@
     font-family: roboto;
 }
 
-/*-----------MENU-----------*/
+/*-----------CABEÇALHO-----------*/
 
-.menu-navbar{
+.header-menu{
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -18,51 +18,55 @@
     position: fixed;
     width: 100%;
     overflow: hidden;
+    z-index: 1;
     background-color: #35353575;
     backdrop-filter: blur(10px);
+    border-bottom: 1px solid white;
 }
 
-.logo{
+.header-logo{
     color: white;
     float: left;
     font-size: 40px;
 }
 
-.menu-navbar ul{
+.header-menu ul{
     display: flex;
     align-items: center;
     float: right;
     gap: 35px;
 }
 
-.menu-navbar ul li a{
+.header-menu ul li a{
     color: white;
     font-size: 20px;
 }
 
-.menu-navbar ul li a:hover{
+.header-menu ul li a:hover{
     transition: 0.5s;
     color: #e4e4e4;
 }
 
-/*-----------CABEÇALHO-----------*/
+/*-----------CONTEÚDO-----------*/
 
-header{
+.conteudo{
     display: flex;
     align-items: center;
-    justify-content: space-around;
     padding-top: 100px;
-    background-color: rgb(65, 65, 102);
+    background-image: url(Imagens/data-science-data-science-portfolios.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    gap: 20px;
 }
 
-.cabecalho-titulo-e-subtitulo{
+.conteudo-titulo-e-subtitulo{
     color: white;
     padding-bottom: 50px;
     font-size: 25px;
     margin-left: 80px;
 }
 
-.cabecalho-btn{
+.conteudo-btn{
     width: 15vw;
     height: 8vh;
     background-color: rgb(45, 53, 78);
@@ -71,35 +75,37 @@ header{
     color: white;
 }
 
-.cabecalho-btn:hover{
+.conteudo-btn:hover{
     width: 15vw;
     height: 8vh;
     background-color: rgb(63, 70, 92);
 }
 
-.cabecalho-img{
+.conteudo-img{
     padding-top: 30px;
     padding-bottom: 30px;
+    margin-right: 50px;
 }
 
-.cabecalho-imagem{
+.conteudo-imagem{
     width: 100%;
-    height: 80vh;
-    border: 5px solid rgb(91, 48, 126);
+    height: 75vh;
+    border: 5px solid rgb(76, 69, 82);
+    filter: brightness(80%);
 }
-                  
-/*-----------CONTEUDO-PRINCIPAL-----------*/
 
-.conteudo{
+/*-----------CONTEUDO2-----------*/
+
+.conteudo2{
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 100px;
     padding-bottom: 100px;
-    background-color: rgb(33, 33, 51);
+    background-color: rgb(40, 40, 59);
 }
 
-.conteudo-titulo{
+.conteudo2-titulo{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -109,7 +115,7 @@ header{
     padding-bottom: 30px;
 }
 
-.conteudo-container{
+.conteudo2-container{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -128,23 +134,23 @@ header{
     border-radius: 80%;
 }
 
-.conteudo-paragrafo{
+.conteudo2-paragrafo{
     color: white;
     font-size: 35px;
 }
 
-/*-----------CONTEUDO-SECUNDÁRIO-----------*/
+/*-----------CONTEUDO3-----------*/
 
-.conteudo2{
+.conteudo3{
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 100px;
     padding-bottom: 100px;
-    background-color: rgb(65, 65, 102);
+    background-color: rgb(38, 38, 49);
 }
 
-.conteudo2-titulo{
+.conteudo3-titulo{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -156,6 +162,7 @@ header{
 
 .container-de-cards{
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
@@ -236,18 +243,18 @@ header{
     height: 20vh;
 }
 
-/*-----------CONTEUDO-TERCIÁRIO-----------*/
+/*-----------CONTEUD4-----------*/
 
-.conteudo3{
+.conteudo4{
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 100px;
     padding-bottom: 100px;
-    background-color: rgb(33, 33, 51);
+    background-color: rgb(28, 28, 39);
 }
 
-.conteudo3-titulo{
+.conteudo4-titulo{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -259,15 +266,16 @@ header{
 
 .container-de-cards2{
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
+    gap: 20px;
 }
 
 .card6{
     border-radius: 5px;
     box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.22);
     padding: 30px;
-    margin: 20px;
     width: 400px;
     background-color: rgb(226, 226, 226);
     text-align: center;
@@ -282,7 +290,6 @@ header{
     border-radius: 5px;
     box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.22);
     padding: 30px;
-    margin: 20px;
     width: 400px;
     background-color: rgb(226, 226, 226);
     text-align: center;
